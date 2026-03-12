@@ -376,3 +376,4 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
     </div>
   )
 }
+
