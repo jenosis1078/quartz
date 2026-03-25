@@ -1,6 +1,6 @@
----
+﻿---
 type: article
-title: "How to Build AI Agents with LangGraph: A Step-by-Step Guide"
+title: "LangGraph로 AI 에이전트 구축하기 단계별 가이드"
 author: "Lore Van Oudenhove"
 url: "https://medium.com/@lorevanoudenhove/how-to-build-ai-agents-with-langgraph-a-step-by-step-guide-5d84d9c7e832"
 source: "Medium"

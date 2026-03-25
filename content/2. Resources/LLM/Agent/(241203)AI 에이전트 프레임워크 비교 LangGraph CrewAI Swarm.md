@@ -1,6 +1,6 @@
----
+﻿---
 type: article
-title: "Choosing the Right AI Agent Framework: LangGraph vs CrewAI vs OpenAI Swarm"
+title: "AI 에이전트 프레임워크 비교 LangGraph CrewAI Swarm"
 author: "Yi Zhang (Co-founder, Relari.ai)"
 url: "https://blog.nuvi.dev/choosing-the-right-ai-agent-framework-langgraph-vs-crewai-vs-openai-swarm-56f7931b4249"
 source: "Medium (Nuvi Blog / Relari Blog)"
