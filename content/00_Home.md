@@ -4,37 +4,22 @@ tags:
   - hub
 publish: true
 ---
-# 🏠 Home
+# Home
 
-## 📖 최근 학습 일지
-```dataview
-table date
-from "Daily"
-where type = "daily-log"
-sort date desc
-limit 5
-```
+## 최근 학습 일지
 
-## 📰 최근 AI 뉴스
-```dataview
-table date
-from "2. Resources/AI-News"
-sort date desc
-limit 5
-```
+- [[Daily/(260325)학습 일지|(260325) 학습 일지]]
 
-## 🔬 최근 논문
-```dataview
-table authors, year
-from "2. Resources/Papers"
-sort file.mtime desc
-limit 5
-```
+## 최근 AI 뉴스
 
-## 💡 최근 아이디어
-```dataview
-table file.mtime as "작성일"
-from "4. Zettelkasten"
-sort file.mtime desc
-limit 5
-```
+- [[2. Resources/AI-News|AI-News 보기]]
+
+## 최근 논문
+
+- [[2. Resources/Papers|Papers 보기]]
+
+## 최근 아이디어
+
+- [[4. Zettelkasten/(260325)내 Obsidian을 RAG 챗봇으로|(260325) 내 Obsidian을 RAG 챗봇으로]]
+- [[4. Zettelkasten/(260325)PDF에서 학습 일지 자동화 에이전트|(260325) PDF에서 학습 일지 자동화 에이전트]]
+- [[4. Zettelkasten/(260325)간격 반복 복습 에이전트|(260325) 간격 반복 복습 에이전트]]
