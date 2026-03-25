@@ -1,29 +1,40 @@
 ---
-publish: true
+type: hub
 tags:
   - hub
-cssclasses: ""
+publish: true
 ---
-
-
 # 🏠 Home
 
-## 📋 진행 중인 프로젝트
-| File | status | due |
-| ---- | ------ | --- |
-
+## 📖 최근 학습 일지
+```dataview
+table date
+from "Daily"
+where type = "daily-log"
+sort date desc
+limit 5
+```
 
 ## 📰 최근 AI 뉴스
-| File | date |
-| ---- | ---- |
-
+```dataview
+table date
+from "2. Resources/AI-News"
+sort date desc
+limit 5
+```
 
 ## 🔬 최근 논문
-| File | authors | year |
-| ---- | ------- | ---- |
-
+```dataview
+table authors, year
+from "2. Resources/Papers"
+sort file.mtime desc
+limit 5
+```
 
 ## 💡 최근 아이디어
-| File | 작성일 |
-| ---- | --- |
-
+```dataview
+table file.mtime as "작성일"
+from "4. Zettelkasten"
+sort file.mtime desc
+limit 5
+```

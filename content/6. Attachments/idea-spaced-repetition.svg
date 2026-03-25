@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <marker id="arrow-emerald" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#0f172a" rx="14"/>
+
+  <!-- Top accent bar -->
+  <rect width="800" height="4" fill="#10b981" rx="2"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#f1f5f9" font-size="16" font-weight="bold">간격 반복 복습 에이전트 (Spaced Repetition)</text>
+  <text x="400" y="52" text-anchor="middle" fill="#64748b" font-size="11">망각 곡선을 이기는 최적 복습 타이밍 자동 계산</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="67" x2="780" y2="67" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- ===== CHART AREA ===== -->
+  <!-- Grid lines (horizontal) -->
+  <!-- 100% y=70 -->
+  <line x1="80" y1="70" x2="750" y2="70" stroke="#1e293b" stroke-width="1"/>
+  <!-- 75% y=125 -->
+  <line x1="80" y1="125" x2="750" y2="125" stroke="#1e293b" stroke-width="1"/>
+  <!-- 50% y=180 -->
+  <line x1="80" y1="180" x2="750" y2="180" stroke="#1e293b" stroke-width="1"/>
+  <!-- 25% y=235 -->
+  <line x1="80" y1="235" x2="750" y2="235" stroke="#1e293b" stroke-width="1"/>
+  <!-- 0% y=290 -->
+  <line x1="80" y1="290" x2="750" y2="290" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Y-axis labels -->
+  <text x="55" y="74" text-anchor="end" fill="#475569" font-size="10">100%</text>
+  <text x="55" y="129" text-anchor="end" fill="#475569" font-size="10">75%</text>
+  <text x="55" y="184" text-anchor="end" fill="#475569" font-size="10">50%</text>
+  <text x="55" y="239" text-anchor="end" fill="#475569" font-size="10">25%</text>
+  <text x="55" y="294" text-anchor="end" fill="#475569" font-size="10">0%</text>
+
+  <!-- Y-axis title (rotated) -->
+  <text transform="translate(22, 185) rotate(-90)" text-anchor="middle" fill="#64748b" font-size="11">기억 유지율</text>
+
+  <!-- X-axis labels -->
+  <text x="110" y="308" text-anchor="middle" fill="#64748b" font-size="11">D+0</text>
+  <text x="310" y="308" text-anchor="middle" fill="#64748b" font-size="11">D+3</text>
+  <text x="460" y="308" text-anchor="middle" fill="#64748b" font-size="11">D+7</text>
+  <text x="720" y="308" text-anchor="middle" fill="#64748b" font-size="11">D+30</text>
+
+  <!-- X vertical tick lines -->
+  <line x1="110" y1="288" x2="110" y2="294" stroke="#475569" stroke-width="1"/>
+  <line x1="310" y1="288" x2="310" y2="294" stroke="#475569" stroke-width="1"/>
+  <line x1="460" y1="288" x2="460" y2="294" stroke="#475569" stroke-width="1"/>
+  <line x1="720" y1="288" x2="720" y2="294" stroke="#475569" stroke-width="1"/>
+
+  <!-- ===== AREA FILL (segment 1) ===== -->
+  <path d="M 110,70 Q 210,175 310,180 L 310,290 L 110,290 Z" fill="#10b981" opacity="0.06"/>
+  <path d="M 310,97 Q 385,130 460,147 L 460,290 L 310,290 Z" fill="#10b981" opacity="0.05"/>
+  <path d="M 460,88 Q 590,175 720,207 L 720,290 L 460,290 Z" fill="#10b981" opacity="0.04"/>
+
+  <!-- ===== FORGETTING CURVES ===== -->
+  <!-- Segment 1: D0(100%) → D3 pre(50%) -->
+  <path d="M 110,70 Q 210,175 310,180" stroke="#10b981" stroke-width="2.5" fill="none"/>
+
+  <!-- Segment 2: D3 post(90%) → D7 pre(70%) -->
+  <path d="M 310,97 Q 385,130 460,147" stroke="#10b981" stroke-width="2.5" fill="none"/>
+
+  <!-- Segment 3: D7 post(94%) → D30 pre(39%) -->
+  <path d="M 460,88 Q 590,175 720,207" stroke="#10b981" stroke-width="2.5" fill="none"/>
+
+  <!-- ===== REVIEW EVENT VERTICAL LINES (dashed) ===== -->
+  <!-- D+3 review: from pre(180) up to post(97) -->
+  <line x1="310" y1="180" x2="310" y2="97" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- D+7 review -->
+  <line x1="460" y1="147" x2="460" y2="88" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- D+30 review -->
+  <line x1="720" y1="207" x2="720" y2="74" stroke="#10b981" stroke-width="2" stroke-dasharray="4,3"/>
+
+  <!-- ===== REVIEW EVENT MARKERS ===== -->
+  <!-- D+3 pre-review -->
+  <circle cx="310" cy="180" r="6" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+  <!-- D+3 post-review -->
+  <circle cx="310" cy="97" r="8" fill="#10b981"/>
+  <text x="310" y="101" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">↑</text>
+
+  <!-- D+7 pre-review -->
+  <circle cx="460" cy="147" r="6" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+  <!-- D+7 post-review -->
+  <circle cx="460" cy="88" r="8" fill="#10b981"/>
+  <text x="460" y="92" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">↑</text>
+
+  <!-- D+30 pre-review -->
+  <circle cx="720" cy="207" r="6" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+  <!-- D+30 post-review -->
+  <circle cx="720" cy="74" r="8" fill="#10b981"/>
+  <text x="720" y="78" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">↑</text>
+
+  <!-- D+0 start dot -->
+  <circle cx="110" cy="70" r="6" fill="#10b981"/>
+
+  <!-- Review percentage labels -->
+  <text x="318" y="94" fill="#10b981" font-size="10" font-weight="600">90%</text>
+  <text x="468" y="85" fill="#10b981" font-size="10" font-weight="600">94%</text>
+  <text x="728" y="71" fill="#10b981" font-size="10" font-weight="600">98%</text>
+
+  <!-- ===== LEFT DESCRIPTION BOX ===== -->
+  <rect x="80" y="148" width="148" height="64" rx="8" fill="#1e293b"/>
+  <rect x="80" y="148" width="3" height="64" rx="2" fill="#10b981"/>
+  <text x="92" y="166" fill="#10b981" font-size="10" font-weight="700">학습 직후</text>
+  <text x="92" y="181" fill="#94a3b8" font-size="10">기억 급감 구간</text>
+  <text x="92" y="196" fill="#94a3b8" font-size="10">→ 가장 중요한</text>
+  <text x="92" y="208" fill="#94a3b8" font-size="10">복습 시점</text>
+
+  <!-- Connector line from box to curve -->
+  <line x1="206" y1="180" x2="220" y2="165" stroke="#475569" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- ===== EVENT LABEL BOXES ===== -->
+  <!-- D+0 -->
+  <rect x="55" y="318" width="110" height="80" rx="8" fill="#1e293b"/>
+  <rect x="55" y="318" width="110" height="3" rx="2" fill="#10b981"/>
+  <text x="110" y="337" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="700">학습</text>
+  <text x="110" y="353" text-anchor="middle" fill="#94a3b8" font-size="10">오늘 읽은 것</text>
+  <text x="110" y="368" text-anchor="middle" fill="#10b981" font-size="10" font-weight="600">100% 기억</text>
+  <text x="110" y="384" text-anchor="middle" fill="#475569" font-size="10">D+0</text>
+  <!-- Connector -->
+  <line x1="110" y1="290" x2="110" y2="316" stroke="#10b981" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- D+3 -->
+  <rect x="255" y="318" width="110" height="80" rx="8" fill="#1e293b"/>
+  <rect x="255" y="318" width="110" height="3" rx="2" fill="#10b981"/>
+  <text x="310" y="337" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="700">복습</text>
+  <text x="310" y="353" text-anchor="middle" fill="#94a3b8" font-size="10">퀴즈 3문제</text>
+  <text x="310" y="368" text-anchor="middle" fill="#10b981" font-size="10" font-weight="600">~50% → 90%</text>
+  <text x="310" y="384" text-anchor="middle" fill="#475569" font-size="10">D+3</text>
+  <!-- Connector -->
+  <line x1="310" y1="290" x2="310" y2="316" stroke="#10b981" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- D+7 -->
+  <rect x="405" y="318" width="110" height="80" rx="8" fill="#1e293b"/>
+  <rect x="405" y="318" width="110" height="3" rx="2" fill="#10b981"/>
+  <text x="460" y="337" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="700">복습</text>
+  <text x="460" y="353" text-anchor="middle" fill="#94a3b8" font-size="10">퀴즈 2문제</text>
+  <text x="460" y="368" text-anchor="middle" fill="#10b981" font-size="10" font-weight="600">~70% → 95%</text>
+  <text x="460" y="384" text-anchor="middle" fill="#475569" font-size="10">D+7</text>
+  <!-- Connector -->
+  <line x1="460" y1="290" x2="460" y2="316" stroke="#10b981" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- D+30 -->
+  <rect x="665" y="318" width="110" height="80" rx="8" fill="#1e293b"/>
+  <rect x="665" y="318" width="110" height="3" rx="2" fill="#10b981"/>
+  <text x="720" y="337" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="700">복습</text>
+  <text x="720" y="353" text-anchor="middle" fill="#94a3b8" font-size="10">퀴즈 1문제</text>
+  <text x="720" y="368" text-anchor="middle" fill="#10b981" font-size="10" font-weight="600">~40% → 98%</text>
+  <text x="720" y="384" text-anchor="middle" fill="#475569" font-size="10">D+30</text>
+  <!-- Connector -->
+  <line x1="720" y1="290" x2="720" y2="316" stroke="#10b981" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Ebbinghaus label -->
+  <text x="750" y="77" text-anchor="end" fill="#475569" font-size="9" font-style="italic">에빙하우스 망각곡선</text>
+</svg>

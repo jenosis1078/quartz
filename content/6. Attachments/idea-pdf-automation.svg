@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <marker id="arrow-yellow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0f172a" rx="14"/>
+
+  <!-- Top accent bar -->
+  <rect width="800" height="4" fill="#f59e0b" rx="2"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#f1f5f9" font-size="16" font-weight="bold">PDF → 학습 일지 자동화 에이전트</text>
+  <text x="400" y="52" text-anchor="middle" fill="#64748b" font-size="11">읽기 → 노트 생성 → 일지 업데이트까지 원클릭으로</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="67" x2="780" y2="67" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- ===== INPUT: PDF 파일 ===== -->
+  <rect x="30" y="145" width="120" height="80" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Document icon -->
+  <rect x="52" y="158" width="56" height="52" rx="4" fill="#94a3b8" opacity="0.12" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Folded corner -->
+  <path d="M94,158 L108,172 L94,172 Z" fill="#94a3b8" opacity="0.4"/>
+  <line x1="94" y1="158" x2="94" y2="172" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="94" y1="172" x2="108" y2="172" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Text lines on document -->
+  <line x1="60" y1="178" x2="98" y2="178" stroke="#94a3b8" stroke-width="1.5" opacity="0.6"/>
+  <line x1="60" y1="188" x2="94" y2="188" stroke="#94a3b8" stroke-width="1.5" opacity="0.4"/>
+  <line x1="60" y1="198" x2="90" y2="198" stroke="#94a3b8" stroke-width="1.5" opacity="0.3"/>
+  <!-- PDF Label -->
+  <text x="90" y="242" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">PDF 파일</text>
+
+  <!-- Arrow: PDF → Agent -->
+  <line x1="154" y1="185" x2="306" y2="185" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  <text x="230" y="178" text-anchor="middle" fill="#f59e0b" font-size="10" opacity="0.8">분석 요청</text>
+
+  <!-- ===== CENTER: Agent ===== -->
+  <!-- Outer glow circle -->
+  <circle cx="370" cy="185" r="52" fill="#f59e0b" opacity="0.08" stroke="#f59e0b" stroke-width="2"/>
+  <!-- Robot head -->
+  <rect x="345" y="155" width="50" height="38" rx="8" fill="#f59e0b" opacity="0.15" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Antenna -->
+  <line x1="370" y1="155" x2="370" y2="143" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="370" cy="139" r="4" fill="#f59e0b"/>
+  <!-- Eyes -->
+  <circle cx="358" cy="170" r="5" fill="#f59e0b"/>
+  <circle cx="382" cy="170" r="5" fill="#f59e0b"/>
+  <!-- Mouth line -->
+  <line x1="360" y1="183" x2="380" y2="183" stroke="#f59e0b" stroke-width="1.5" opacity="0.6"/>
+  <!-- Robot body -->
+  <rect x="350" y="195" width="40" height="26" rx="4" fill="#f59e0b" opacity="0.1" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Body detail -->
+  <circle cx="362" cy="208" r="3" fill="#f59e0b" opacity="0.6"/>
+  <circle cx="378" cy="208" r="3" fill="#f59e0b" opacity="0.6"/>
+  <!-- Agent label -->
+  <text x="370" y="240" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="700">에이전트</text>
+
+  <!-- ===== OUTPUT 1: 노트 자동 생성 ===== -->
+  <rect x="450" y="75" width="200" height="60" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Accent bar -->
+  <rect x="450" y="75" width="4" height="60" rx="2" fill="#f59e0b"/>
+  <text x="470" y="96" fill="#f59e0b" font-size="11" font-weight="700">노트 자동 생성</text>
+  <text x="470" y="113" fill="#94a3b8" font-size="10">Zettelkasten 형식으로</text>
+  <text x="470" y="127" fill="#94a3b8" font-size="10">frontmatter 포함 자동 저장</text>
+
+  <!-- Arrow: Agent → Output1 -->
+  <line x1="422" y1="165" x2="447" y2="116" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#arrow-yellow)"/>
+
+  <!-- ===== OUTPUT 2: 핵심 포인트 추출 ===== -->
+  <rect x="450" y="155" width="200" height="60" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Accent bar -->
+  <rect x="450" y="155" width="4" height="60" rx="2" fill="#f59e0b"/>
+  <text x="470" y="176" fill="#f59e0b" font-size="11" font-weight="700">핵심 포인트 추출</text>
+  <text x="470" y="193" fill="#94a3b8" font-size="10">Top 3 인사이트 자동 추출</text>
+  <text x="470" y="207" fill="#94a3b8" font-size="10">계층 구조로 정리</text>
+
+  <!-- Arrow: Agent → Output2 -->
+  <line x1="422" y1="185" x2="447" y2="185" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#arrow-yellow)"/>
+
+  <!-- ===== OUTPUT 3: 학습 일지 업데이트 ===== -->
+  <rect x="450" y="235" width="200" height="60" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Accent bar -->
+  <rect x="450" y="235" width="4" height="60" rx="2" fill="#f59e0b"/>
+  <text x="470" y="256" fill="#f59e0b" font-size="11" font-weight="700">학습 일지 업데이트</text>
+  <text x="470" y="273" fill="#94a3b8" font-size="10">오늘 날짜 일지에 링크 추가</text>
+  <text x="470" y="287" fill="#94a3b8" font-size="10">인사이트 섹션 자동 갱신</text>
+
+  <!-- Arrow: Agent → Output3 -->
+  <line x1="422" y1="205" x2="447" y2="254" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#arrow-yellow)"/>
+
+  <!-- ===== Before / After ===== -->
+  <!-- Before box -->
+  <rect x="30" y="315" width="340" height="60" rx="8" fill="#1e293b"/>
+  <rect x="30" y="315" width="4" height="60" rx="2" fill="#ef4444"/>
+  <text x="48" y="337" fill="#ef4444" font-size="12" font-weight="700">Before</text>
+  <text x="48" y="355" fill="#94a3b8" font-size="11">PDF → (수동) 읽기 + 정리 + 업데이트</text>
+  <text x="48" y="370" fill="#ef4444" font-size="11" font-weight="600">약 30분 이상 소요</text>
+
+  <!-- Center arrow -->
+  <text x="390" y="350" text-anchor="middle" fill="#64748b" font-size="20" font-weight="bold">→</text>
+
+  <!-- After box -->
+  <rect x="420" y="315" width="340" height="60" rx="8" fill="#1e293b"/>
+  <rect x="420" y="315" width="4" height="60" rx="2" fill="#22c55e"/>
+  <text x="438" y="337" fill="#22c55e" font-size="12" font-weight="700">After</text>
+  <text x="438" y="355" fill="#94a3b8" font-size="11">PDF → (에이전트) 자동 처리</text>
+  <text x="438" y="370" fill="#22c55e" font-size="11" font-weight="600">3분 이내 완료</text>
+</svg>

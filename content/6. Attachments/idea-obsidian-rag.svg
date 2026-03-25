@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b5cf6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0f172a" rx="14"/>
+
+  <!-- Top accent bar -->
+  <rect width="800" height="4" fill="#3b82f6" rx="2"/>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" fill="#f1f5f9" font-size="16" font-weight="bold">내 Obsidian Vault → RAG 챗봇</text>
+  <text x="400" y="52" text-anchor="middle" fill="#64748b" font-size="11">지금 쌓고 있는 노트가 곧 나만의 지식 베이스</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="67" x2="780" y2="67" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Step 1: Vault -->
+  <rect x="50" y="85" width="100" height="90" rx="10" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
+  <!-- Folder icon -->
+  <path d="M75,108 L75,148 L125,148 L125,115 L103,115 L98,108 Z" fill="#22c55e" opacity="0.18" stroke="#22c55e" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M75,115 L125,115" stroke="#22c55e" stroke-width="1"/>
+  <!-- Badge -->
+  <circle cx="150" cy="89" r="9" fill="#3b82f6"/>
+  <text x="150" y="93" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">1</text>
+
+  <!-- Step 2: Chunking -->
+  <rect x="200" y="85" width="100" height="90" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Stack rects with dashes -->
+  <rect x="222" y="105" width="56" height="14" rx="3" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="222" y="122" width="56" height="14" rx="3" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="222" y="139" width="56" height="14" rx="3" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Badge -->
+  <circle cx="300" cy="89" r="9" fill="#3b82f6"/>
+  <text x="300" y="93" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">2</text>
+
+  <!-- Step 3: Embedding -->
+  <rect x="350" y="85" width="100" height="90" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- 3x3 dot grid -->
+  <circle cx="383" cy="113" r="4" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="400" cy="113" r="4" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="417" cy="113" r="4" fill="#3b82f6" opacity="0.7"/>
+  <circle cx="383" cy="130" r="4" fill="#3b82f6"/>
+  <circle cx="400" cy="130" r="4" fill="#3b82f6"/>
+  <circle cx="417" cy="130" r="4" fill="#3b82f6"/>
+  <circle cx="383" cy="147" r="4" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="400" cy="147" r="4" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="417" cy="147" r="4" fill="#3b82f6" opacity="0.5"/>
+  <!-- Badge -->
+  <circle cx="450" cy="89" r="9" fill="#3b82f6"/>
+  <text x="450" y="93" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">3</text>
+
+  <!-- Step 4: Search -->
+  <rect x="500" y="85" width="100" height="90" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Magnifier icon -->
+  <circle cx="545" cy="122" r="18" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+  <circle cx="545" cy="122" r="10" fill="#3b82f6" opacity="0.12"/>
+  <line x1="558" y1="135" x2="568" y2="148" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Badge -->
+  <circle cx="600" cy="89" r="9" fill="#3b82f6"/>
+  <text x="600" y="93" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">4</text>
+
+  <!-- Step 5: Answer -->
+  <rect x="650" y="85" width="100" height="90" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/>
+  <!-- Speech bubble -->
+  <rect x="668" y="100" width="64" height="44" rx="8" fill="#8b5cf6" opacity="0.15" stroke="#8b5cf6" stroke-width="1.5"/>
+  <polygon points="685,144 695,154 705,144" fill="#8b5cf6" opacity="0.6"/>
+  <!-- Small lines inside bubble -->
+  <line x1="678" y1="114" x2="722" y2="114" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7"/>
+  <line x1="678" y1="124" x2="718" y2="124" stroke="#8b5cf6" stroke-width="1.5" opacity="0.5"/>
+  <line x1="678" y1="134" x2="710" y2="134" stroke="#8b5cf6" stroke-width="1.5" opacity="0.4"/>
+  <!-- Badge -->
+  <circle cx="750" cy="89" r="9" fill="#8b5cf6"/>
+  <text x="750" y="93" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">5</text>
+
+  <!-- Arrows between steps -->
+  <line x1="153" y1="130" x2="197" y2="130" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  <line x1="303" y1="130" x2="347" y2="130" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  <line x1="453" y1="130" x2="497" y2="130" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  <line x1="603" y1="130" x2="647" y2="130" stroke="#8b5cf6" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+
+  <!-- Step Labels -->
+  <text x="100" y="197" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">Vault</text>
+  <text x="250" y="197" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">청킹</text>
+  <text x="400" y="197" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">임베딩</text>
+  <text x="550" y="197" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">검색</text>
+  <text x="700" y="197" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">답변</text>
+
+  <!-- Info bar background -->
+  <rect x="20" y="215" width="760" height="160" rx="10" fill="#1e293b"/>
+
+  <!-- Column dividers -->
+  <line x1="273" y1="228" x2="273" y2="362" stroke="#334155" stroke-width="1"/>
+  <line x1="527" y1="228" x2="527" y2="362" stroke="#334155" stroke-width="1"/>
+
+  <!-- Column 1: Key Point -->
+  <text x="50" y="238" fill="#22c55e" font-size="11" font-weight="700">핵심 포인트</text>
+  <text x="50" y="258" fill="#cbd5e1" font-size="11">Obsidian 노트 = 이미</text>
+  <text x="50" y="275" fill="#cbd5e1" font-size="11">청킹된 단위로 존재</text>
+  <text x="50" y="292" fill="#cbd5e1" font-size="11">추가 분할 불필요</text>
+
+  <!-- Column 2: Stack -->
+  <text x="296" y="238" fill="#3b82f6" font-size="11" font-weight="700">필요 스택</text>
+  <text x="296" y="258" fill="#cbd5e1" font-size="11">LangChain + OpenAI API</text>
+  <text x="296" y="275" fill="#cbd5e1" font-size="11">FAISS (로컬 벡터 DB)</text>
+  <text x="296" y="292" fill="#cbd5e1" font-size="11">Python 파서 스크립트</text>
+
+  <!-- Column 3: Considerations -->
+  <text x="546" y="238" fill="#f59e0b" font-size="11" font-weight="700">고려사항</text>
+  <text x="546" y="258" fill="#cbd5e1" font-size="11">임베딩 비용 (API)</text>
+  <text x="546" y="275" fill="#cbd5e1" font-size="11">노트 품질 = 답변 품질</text>
+  <text x="546" y="292" fill="#cbd5e1" font-size="11">한국어 임베딩 모델 선택</text>
+
+  <!-- Bottom divider in info bar -->
+  <line x1="30" y1="310" x2="770" y2="310" stroke="#334155" stroke-width="1"/>
+
+  <!-- Mini pipeline labels -->
+  <text x="100" y="332" text-anchor="middle" fill="#475569" font-size="10">노트 파일</text>
+  <text x="250" y="332" text-anchor="middle" fill="#475569" font-size="10">텍스트 분할</text>
+  <text x="400" y="332" text-anchor="middle" fill="#475569" font-size="10">벡터 변환</text>
+  <text x="550" y="332" text-anchor="middle" fill="#475569" font-size="10">유사도 검색</text>
+  <text x="700" y="332" text-anchor="middle" fill="#475569" font-size="10">LLM 생성</text>
+
+  <!-- Flow dots -->
+  <circle cx="175" cy="329" r="2" fill="#334155"/>
+  <circle cx="182" cy="329" r="2" fill="#334155"/>
+  <circle cx="189" cy="329" r="2" fill="#334155"/>
+  <circle cx="325" cy="329" r="2" fill="#334155"/>
+  <circle cx="332" cy="329" r="2" fill="#334155"/>
+  <circle cx="339" cy="329" r="2" fill="#334155"/>
+  <circle cx="475" cy="329" r="2" fill="#334155"/>
+  <circle cx="482" cy="329" r="2" fill="#334155"/>
+  <circle cx="489" cy="329" r="2" fill="#334155"/>
+  <circle cx="625" cy="329" r="2" fill="#334155"/>
+  <circle cx="632" cy="329" r="2" fill="#334155"/>
+  <circle cx="639" cy="329" r="2" fill="#334155"/>
+
+  <!-- Bottom note -->
+  <text x="400" y="356" text-anchor="middle" fill="#475569" font-size="10">GPT-4o mini 기반 · 로컬 FAISS 벡터 DB · Obsidian .md 파일 직접 파싱</text>
+</svg>
