@@ -26,26 +26,12 @@ function Get-NoteLinks {
     }
 }
 
-function Get-DailyLines {
-    param([int]$Limit = 5)
-    $folder = "$ObsidianRoot\Daily"
-    if (-not (Test-Path $folder)) { return @() }
-    $files = Get-ChildItem $folder -Filter "*.md" -File |
-        Sort-Object Name -Descending |
-        Select-Object -First $Limit
-    return $files | ForEach-Object {
-        $title = $_.BaseName -replace '^\(\d{6}\)', '' -replace '^\s+', ''
-        $date  = if ($_.Name -match '^\((\d{2})(\d{2})(\d{2})\)') { "20$($Matches[1])-$($Matches[2])-$($Matches[3])" } else { $_.BaseName }
-        "- $date $title"
-    }
-}
+$dailyLinks  = Get-NoteLinks "$ObsidianRoot\Daily"                   "Daily"                   -Limit 5
+$ideaLinks   = Get-NoteLinks "$ObsidianRoot\4. Zettelkasten"         "4. Zettelkasten"         -Limit 5
+$newsLinks   = Get-NoteLinks "$ObsidianRoot\2. Resources\AI-News"    "2. Resources/AI-News"    -Limit 5
+$paperLinks  = Get-NoteLinks "$ObsidianRoot\2. Resources\Papers"     "2. Resources/Papers"     -Limit 5
 
-$dailyLines    = Get-DailyLines -Limit 5
-$ideaLinks     = Get-NoteLinks "$ObsidianRoot\4. Zettelkasten"      "4. Zettelkasten"         -Limit 5
-$newsLinks     = Get-NoteLinks "$ObsidianRoot\2. Resources\AI-News" "2. Resources/AI-News"    -Limit 5
-$paperLinks    = Get-NoteLinks "$ObsidianRoot\2. Resources\Papers"  "2. Resources/Papers"     -Limit 5
-
-$dailySection  = if ($dailyLines)  { $dailyLines  -join "`n" } else { "_(없음)_" }
+$dailySection  = if ($dailyLinks)  { $dailyLinks  -join "`n" } else { "_(없음)_" }
 $ideaSection   = if ($ideaLinks)   { $ideaLinks   -join "`n" } else { "_(없음)_" }
 $newsSection   = if ($newsLinks)   { $newsLinks   -join "`n" } else { "_(없음)_" }
 $paperSection  = if ($paperLinks)  { $paperLinks  -join "`n" } else { "_(없음)_" }
@@ -80,10 +66,11 @@ Set-Content -Path "$QuartzContent\00_Home.md" -Value $homeContent -Encoding UTF8
 Write-Host "Home.md 생성 완료" -ForegroundColor Green
 
 # ──────────────────────────────────────────
-# 2. 배포 대상 노트 복사 (공개 폴더만)
+# 2. 배포 대상 노트 복사
 # ──────────────────────────────────────────
 
 $publishFolders = @(
+    @{ Src = "Daily";                    Dst = "Daily" },
     @{ Src = "2. Resources\LLM\Agent";   Dst = "2. Resources\LLM\Agent" },
     @{ Src = "2. Resources\LLM\RAG";     Dst = "2. Resources\LLM\RAG" },
     @{ Src = "2. Resources\AI-News";     Dst = "2. Resources\AI-News" },
@@ -108,8 +95,8 @@ $svgSrc = "$ObsidianRoot\6. Attachments"
 $svgDst = "$QuartzContent\6. Attachments"
 if (Test-Path $svgSrc) {
     New-Item -ItemType Directory -Force $svgDst | Out-Null
-    Copy-Item "$svgSrc\*.svg" $svgDst -Force -ErrorAction SilentlyContinue
-    Write-Host "복사: 6. Attachments (SVG)" -ForegroundColor Cyan
+    Copy-Item "$svgSrc\*" $svgDst -Force -ErrorAction SilentlyContinue
+    Write-Host "복사: 6. Attachments" -ForegroundColor Cyan
 }
 
 # ──────────────────────────────────────────
