@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="900" height="520" rx="16" fill="#ffffff"/>
+
+  <text x="450" y="35" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="700">Current Analysis Deliverable Pipeline</text>
+  <text x="450" y="58" text-anchor="middle" fill="#64748b" font-size="12">Claude Code Custom Skills for ISP/ISMP</text>
+
+  <!-- Row 1: Input -->
+  <text x="80" y="100" text-anchor="middle" fill="#64748b" font-size="11" font-weight="600">INPUT</text>
+
+  <rect x="30" y="115" width="100" height="55" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="80" y="140" text-anchor="middle" fill="#7e22ce" font-size="11" font-weight="600">Interview</text>
+  <text x="80" y="156" text-anchor="middle" fill="#a78bfa" font-size="9">.md / .txt</text>
+
+  <rect x="30" y="180" width="100" height="55" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="80" y="205" text-anchor="middle" fill="#5b21b6" font-size="11" font-weight="600">Survey</text>
+  <text x="80" y="221" text-anchor="middle" fill="#a78bfa" font-size="9">.csv / .xlsx</text>
+
+  <rect x="30" y="245" width="100" height="55" rx="8" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="80" y="270" text-anchor="middle" fill="#6d28d9" font-size="11" font-weight="600">Documents</text>
+  <text x="80" y="286" text-anchor="middle" fill="#a78bfa" font-size="9">RFP / as-is docs</text>
+
+  <!-- Arrows -->
+  <line x1="130" y1="142" x2="178" y2="195" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="130" y1="207" x2="178" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="130" y1="272" x2="178" y2="210" stroke="#94a3b8" stroke-width="1.5"/>
+  <polygon points="178,195 168,191 170,201" fill="#94a3b8"/>
+
+  <!-- Skill 1: /analyze-interview -->
+  <rect x="180" y="115" width="180" height="80" rx="10" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="270" y="142" text-anchor="middle" fill="#15803d" font-size="12" font-weight="700">/analyze-interview</text>
+  <text x="270" y="162" text-anchor="middle" fill="#166534" font-size="10">pain point extraction</text>
+  <text x="270" y="178" text-anchor="middle" fill="#166534" font-size="10">issue categorization</text>
+
+  <line x1="360" y1="155" x2="398" y2="155" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="398,155 388,149 388,161" fill="#22c55e"/>
+
+  <!-- Skill 2: /issue-matrix -->
+  <rect x="400" y="115" width="180" height="80" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="490" y="142" text-anchor="middle" fill="#b45309" font-size="12" font-weight="700">/issue-matrix</text>
+  <text x="490" y="162" text-anchor="middle" fill="#92400e" font-size="10">priority scoring</text>
+  <text x="490" y="178" text-anchor="middle" fill="#92400e" font-size="10">impact vs urgency</text>
+
+  <line x1="580" y1="155" x2="618" y2="155" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="618,155 608,149 608,161" fill="#f59e0b"/>
+
+  <!-- Skill 3: /generate-deliverable -->
+  <rect x="620" y="115" width="180" height="80" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="710" y="142" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="700">/gen-deliverable</text>
+  <text x="710" y="162" text-anchor="middle" fill="#1e40af" font-size="10">table / matrix / chart</text>
+  <text x="710" y="178" text-anchor="middle" fill="#1e40af" font-size="10">markdown output</text>
+
+  <!-- Row 2: Skill Architecture -->
+  <rect x="180" y="230" width="620" height="120" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="490" y="258" text-anchor="middle" fill="#334155" font-size="14" font-weight="700">Custom Skill Architecture (SKILL.md)</text>
+
+  <rect x="200" y="272" width="130" height="60" rx="8" fill="#ede9fe" stroke="#a78bfa" stroke-width="1"/>
+  <text x="265" y="294" text-anchor="middle" fill="#5b21b6" font-size="11" font-weight="600">YAML Frontmatter</text>
+  <text x="265" y="312" text-anchor="middle" fill="#7c3aed" font-size="9">trigger / description</text>
+  <text x="265" y="326" text-anchor="middle" fill="#7c3aed" font-size="9">model: opus</text>
+
+  <text x="345" y="302" text-anchor="middle" fill="#94a3b8" font-size="16">+</text>
+
+  <rect x="365" y="272" width="130" height="60" rx="8" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="430" y="294" text-anchor="middle" fill="#166534" font-size="11" font-weight="600">Instructions</text>
+  <text x="430" y="312" text-anchor="middle" fill="#16a34a" font-size="9">ISP framework</text>
+  <text x="430" y="326" text-anchor="middle" fill="#16a34a" font-size="9">output template</text>
+
+  <text x="510" y="302" text-anchor="middle" fill="#94a3b8" font-size="16">+</text>
+
+  <rect x="530" y="272" width="130" height="60" rx="8" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="595" y="294" text-anchor="middle" fill="#92400e" font-size="11" font-weight="600">Hooks</text>
+  <text x="595" y="312" text-anchor="middle" fill="#b45309" font-size="9">PostToolUse: lint</text>
+  <text x="595" y="326" text-anchor="middle" fill="#b45309" font-size="9">format validation</text>
+
+  <rect x="680" y="278" width="100" height="48" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="1"/>
+  <text x="730" y="300" text-anchor="middle" fill="#c2410c" font-size="10" font-weight="600">CLAUDE.md</text>
+  <text x="730" y="316" text-anchor="middle" fill="#ea580c" font-size="9">project rules</text>
+
+  <!-- Row 3: Output Deliverables -->
+  <text x="450" y="385" text-anchor="middle" fill="#475569" font-size="13" font-weight="600">Output Deliverables</text>
+
+  <rect x="80" y="400" width="150" height="50" rx="8" fill="#dcfce7" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="155" y="422" text-anchor="middle" fill="#166534" font-size="12" font-weight="600">Issue List</text>
+  <text x="155" y="440" text-anchor="middle" fill="#64748b" font-size="10">categorized table</text>
+
+  <rect x="260" y="400" width="150" height="50" rx="8" fill="#fef3c7" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="335" y="422" text-anchor="middle" fill="#92400e" font-size="12" font-weight="600">Priority Matrix</text>
+  <text x="335" y="440" text-anchor="middle" fill="#64748b" font-size="10">impact x urgency</text>
+
+  <rect x="440" y="400" width="150" height="50" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="515" y="422" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="600">Gap Analysis</text>
+  <text x="515" y="440" text-anchor="middle" fill="#64748b" font-size="10">as-is vs to-be</text>
+
+  <rect x="620" y="400" width="150" height="50" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="695" y="422" text-anchor="middle" fill="#7e22ce" font-size="12" font-weight="600">Summary Report</text>
+  <text x="695" y="440" text-anchor="middle" fill="#64748b" font-size="10">markdown for PPT</text>
+
+  <!-- Footer -->
+  <text x="450" y="490" text-anchor="middle" fill="#94a3b8" font-size="11">Consultant reviews and refines AI output before client delivery</text>
+</svg>
