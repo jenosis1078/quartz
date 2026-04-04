@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1100" height="720" rx="16" fill="#ffffff"/>
+
+  <text x="550" y="40" text-anchor="middle" fill="#1e293b" font-size="24" font-weight="700">Claude Code Architecture</text>
+  <text x="550" y="65" text-anchor="middle" fill="#64748b" font-size="14">Agentic Coding Workflow</text>
+
+  <!-- ===== Left: Input Layer ===== -->
+  <text x="90" y="105" text-anchor="middle" fill="#64748b" font-size="12" font-weight="600">INPUT</text>
+
+  <rect x="30" y="120" width="120" height="50" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <text x="90" y="142" text-anchor="middle" fill="#334155" font-size="12" font-weight="600">Terminal</text>
+  <text x="90" y="158" text-anchor="middle" fill="#94a3b8" font-size="10">CLI</text>
+
+  <rect x="30" y="180" width="120" height="50" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="90" y="202" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="600">VS Code</text>
+  <text x="90" y="218" text-anchor="middle" fill="#94a3b8" font-size="10">Extension</text>
+
+  <rect x="30" y="240" width="120" height="50" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="90" y="262" text-anchor="middle" fill="#7e22ce" font-size="12" font-weight="600">JetBrains</text>
+  <text x="90" y="278" text-anchor="middle" fill="#94a3b8" font-size="10">Plugin</text>
+
+  <rect x="30" y="300" width="120" height="50" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="90" y="322" text-anchor="middle" fill="#059669" font-size="12" font-weight="600">Web / Desktop</text>
+  <text x="90" y="338" text-anchor="middle" fill="#94a3b8" font-size="10">App</text>
+
+  <!-- Arrows from inputs (simple lines, no markers) -->
+  <line x1="150" y1="145" x2="218" y2="228" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="150" y1="205" x2="218" y2="230" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="150" y1="265" x2="218" y2="245" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="150" y1="325" x2="218" y2="255" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- arrowheads -->
+  <polygon points="218,228 210,222 212,232" fill="#94a3b8"/>
+  <polygon points="218,230 210,224 212,234" fill="#94a3b8"/>
+  <polygon points="218,245 210,239 212,249" fill="#94a3b8"/>
+  <polygon points="218,255 210,249 212,259" fill="#94a3b8"/>
+
+  <!-- ===== Context Loading ===== -->
+  <rect x="220" y="200" width="150" height="80" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="295" y="228" text-anchor="middle" fill="#334155" font-size="13" font-weight="600">Context Load</text>
+  <text x="295" y="248" text-anchor="middle" fill="#64748b" font-size="10">CLAUDE.md</text>
+  <text x="295" y="262" text-anchor="middle" fill="#64748b" font-size="10">Memory / Skills</text>
+  <text x="295" y="276" text-anchor="middle" fill="#64748b" font-size="10">MCP Tools</text>
+
+  <!-- Arrow to Agent Loop -->
+  <line x1="370" y1="240" x2="418" y2="240" stroke="#64748b" stroke-width="1.5"/>
+  <polygon points="418,240 408,234 408,246" fill="#64748b"/>
+
+  <!-- ===== Core: Agent Loop ===== -->
+  <rect x="420" y="130" width="280" height="240" rx="14" fill="#f0fdf4" stroke="#22c55e" stroke-width="2.5"/>
+  <text x="560" y="160" text-anchor="middle" fill="#15803d" font-size="16" font-weight="700">Agent Loop</text>
+
+  <rect x="445" y="175" width="110" height="40" rx="8" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="500" y="200" text-anchor="middle" fill="#166534" font-size="12" font-weight="600">Think</text>
+
+  <line x1="555" y1="195" x2="573" y2="195" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="573,195 563,189 563,201" fill="#22c55e"/>
+
+  <rect x="575" y="175" width="100" height="40" rx="8" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="625" y="200" text-anchor="middle" fill="#166534" font-size="12" font-weight="600">Plan</text>
+
+  <rect x="475" y="235" width="170" height="40" rx="8" fill="#bbf7d0" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="560" y="260" text-anchor="middle" fill="#14532d" font-size="13" font-weight="700">Execute Tools</text>
+
+  <rect x="475" y="295" width="170" height="40" rx="8" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="560" y="320" text-anchor="middle" fill="#166534" font-size="12" font-weight="600">Evaluate / Iterate</text>
+
+  <!-- Plan to Execute arrow -->
+  <line x1="625" y1="215" x2="598" y2="233" stroke="#22c55e" stroke-width="1.5"/>
+  <polygon points="598,233 600,222 608,230" fill="#22c55e"/>
+
+  <!-- Loop indicator -->
+  <rect x="660" y="240" width="30" height="45" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="675" y="268" text-anchor="middle" fill="#16a34a" font-size="9" font-weight="700">loop</text>
+  <line x1="645" y1="315" x2="660" y2="268" stroke="#22c55e" stroke-width="1"/>
+  <line x1="675" y1="240" x2="660" y2="210" stroke="#22c55e" stroke-width="1"/>
+
+  <!-- ===== Right: Tools ===== -->
+  <text x="870" y="105" text-anchor="middle" fill="#64748b" font-size="12" font-weight="600">TOOLS</text>
+
+  <rect x="790" y="120" width="140" height="45" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="860" y="140" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="600">Read / Write</text>
+  <text x="860" y="155" text-anchor="middle" fill="#64748b" font-size="10">File Operations</text>
+
+  <rect x="790" y="175" width="140" height="45" rx="8" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+  <text x="860" y="195" text-anchor="middle" fill="#334155" font-size="12" font-weight="600">Bash</text>
+  <text x="860" y="210" text-anchor="middle" fill="#64748b" font-size="10">Shell Commands</text>
+
+  <rect x="790" y="230" width="140" height="45" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="860" y="250" text-anchor="middle" fill="#059669" font-size="12" font-weight="600">Grep / Glob</text>
+  <text x="860" y="265" text-anchor="middle" fill="#64748b" font-size="10">Search</text>
+
+  <rect x="790" y="285" width="140" height="45" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="860" y="305" text-anchor="middle" fill="#7e22ce" font-size="12" font-weight="600">Agent</text>
+  <text x="860" y="320" text-anchor="middle" fill="#64748b" font-size="10">Sub-agents</text>
+
+  <rect x="790" y="340" width="140" height="45" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="860" y="360" text-anchor="middle" fill="#b45309" font-size="12" font-weight="600">Web / MCP</text>
+  <text x="860" y="375" text-anchor="middle" fill="#64748b" font-size="10">External Tools</text>
+
+  <!-- Arrows from Agent Loop to Tools -->
+  <line x1="700" y1="240" x2="788" y2="197" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="700" y1="255" x2="788" y2="255" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="700" y1="270" x2="788" y2="307" stroke="#64748b" stroke-width="1.5"/>
+  <polygon points="788,197 778,193 780,203" fill="#64748b"/>
+  <polygon points="788,255 778,249 778,261" fill="#64748b"/>
+  <polygon points="788,307 778,301 780,313" fill="#64748b"/>
+
+  <!-- ===== Bottom: Hooks Layer ===== -->
+  <rect x="420" y="410" width="280" height="50" rx="10" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="560" y="432" text-anchor="middle" fill="#c2410c" font-size="13" font-weight="600">Hooks (Lifecycle Events)</text>
+  <text x="560" y="449" text-anchor="middle" fill="#94a3b8" font-size="10">PreToolUse / PostToolUse / PermissionDenied / Stop</text>
+  <line x1="560" y1="370" x2="560" y2="410" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <!-- ===== Output Layer ===== -->
+  <text x="550" y="500" text-anchor="middle" fill="#64748b" font-size="12" font-weight="600">OUTPUT</text>
+
+  <rect x="80" y="515" width="140" height="50" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="150" y="537" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="600">Code Changes</text>
+  <text x="150" y="553" text-anchor="middle" fill="#64748b" font-size="10">Multi-file Edits</text>
+
+  <rect x="250" y="515" width="130" height="50" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="315" y="537" text-anchor="middle" fill="#15803d" font-size="12" font-weight="600">Tests</text>
+  <text x="315" y="553" text-anchor="middle" fill="#64748b" font-size="10">Run and Fix</text>
+
+  <rect x="410" y="515" width="130" height="50" rx="8" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="475" y="537" text-anchor="middle" fill="#7e22ce" font-size="12" font-weight="600">Git</text>
+  <text x="475" y="553" text-anchor="middle" fill="#64748b" font-size="10">Commit / PR</text>
+
+  <rect x="570" y="515" width="130" height="50" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="635" y="537" text-anchor="middle" fill="#b45309" font-size="12" font-weight="600">Reports</text>
+  <text x="635" y="553" text-anchor="middle" fill="#64748b" font-size="10">Analysis / Docs</text>
+
+  <rect x="730" y="515" width="140" height="50" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+  <text x="800" y="537" text-anchor="middle" fill="#dc2626" font-size="12" font-weight="600">Scheduled</text>
+  <text x="800" y="553" text-anchor="middle" fill="#64748b" font-size="10">Cron Tasks</text>
+
+  <!-- Dashed lines to output -->
+  <line x1="490" y1="370" x2="315" y2="515" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="560" y1="460" x2="475" y2="515" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="560" y1="460" x2="635" y2="515" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- ===== Config Hierarchy ===== -->
+  <rect x="80" y="600" width="890" height="55" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="120" y="625" fill="#475569" font-size="12" font-weight="600">Config Hierarchy:</text>
+
+  <rect x="260" y="612" width="150" height="28" rx="6" fill="#ede9fe" stroke="#a78bfa" stroke-width="1"/>
+  <text x="335" y="631" text-anchor="middle" fill="#5b21b6" font-size="11">~/.claude/CLAUDE.md</text>
+
+  <text x="425" y="631" fill="#94a3b8" font-size="14">&gt;</text>
+
+  <rect x="445" y="612" width="150" height="28" rx="6" fill="#dbeafe" stroke="#60a5fa" stroke-width="1"/>
+  <text x="520" y="631" text-anchor="middle" fill="#1e40af" font-size="11">project/CLAUDE.md</text>
+
+  <text x="610" y="631" fill="#94a3b8" font-size="14">&gt;</text>
+
+  <rect x="630" y="612" width="150" height="28" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="705" y="631" text-anchor="middle" fill="#166534" font-size="11">sub-dir/CLAUDE.md</text>
+
+  <text x="805" y="631" fill="#94a3b8" font-size="11">merge &gt;</text>
+  <text x="870" y="631" fill="#334155" font-size="11" font-weight="600">Final Context</text>
+
+  <!-- Permission Modes -->
+  <rect x="80" y="670" width="890" height="35" rx="8" fill="#fefce8" stroke="#fde047" stroke-width="1"/>
+  <text x="120" y="693" fill="#a16207" font-size="12" font-weight="600">Permission Modes:</text>
+
+  <rect x="270" y="678" width="80" height="22" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="310" y="694" text-anchor="middle" fill="#166534" font-size="10">Default</text>
+
+  <rect x="370" y="678" width="80" height="22" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="410" y="694" text-anchor="middle" fill="#92400e" font-size="10">Auto</text>
+
+  <rect x="470" y="678" width="80" height="22" rx="4" fill="#fecaca" stroke="#f87171" stroke-width="1"/>
+  <text x="510" y="694" text-anchor="middle" fill="#dc2626" font-size="10">Full Auto</text>
+
+  <text x="580" y="694" fill="#94a3b8" font-size="10">risk increases</text>
+</svg>

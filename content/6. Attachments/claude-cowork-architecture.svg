@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="ca" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="680" rx="16" fill="#ffffff"/>
+
+  <text x="500" y="38" text-anchor="middle" fill="#1e293b" font-size="24" font-weight="700">Claude Cowork Architecture</text>
+  <text x="500" y="62" text-anchor="middle" fill="#64748b" font-size="14">Desktop Agent for Knowledge Work</text>
+
+  <!-- ===== Top: User Layer ===== -->
+  <rect x="350" y="85" width="300" height="55" rx="12" fill="#faf5ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="500" y="110" text-anchor="middle" fill="#7e22ce" font-size="16" font-weight="700">Claude Desktop App</text>
+  <text x="500" y="128" text-anchor="middle" fill="#a78bfa" font-size="11">macOS / Windows — Cowork Tab</text>
+
+  <line x1="500" y1="140" x2="500" y2="175" stroke="#64748b" stroke-width="1.5" marker-end="url(#ca)"/>
+
+  <!-- ===== Sandboxed VM ===== -->
+  <rect x="100" y="175" width="800" height="310" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="140" y="200" fill="#475569" font-size="14" font-weight="700">Sandboxed VM Environment</text>
+  <rect x="270" y="189" width="60" height="18" rx="4" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="300" y="202" text-anchor="middle" fill="#15803d" font-size="9" font-weight="600">Isolated</text>
+
+  <!-- Agent Core -->
+  <rect x="350" y="220" width="300" height="80" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="500" y="250" text-anchor="middle" fill="#15803d" font-size="16" font-weight="700">Cowork Agent</text>
+  <text x="500" y="272" text-anchor="middle" fill="#16a34a" font-size="12">Think → Plan → Execute → Iterate</text>
+  <text x="500" y="290" text-anchor="middle" fill="#64748b" font-size="10">Same agentic architecture as Claude Code</text>
+
+  <!-- ===== Left: Local Capabilities ===== -->
+  <text x="200" y="325" text-anchor="middle" fill="#475569" font-size="12" font-weight="600">Local Capabilities</text>
+
+  <rect x="120" y="340" width="160" height="40" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="200" y="365" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="600">File Read / Write</text>
+
+  <rect x="120" y="390" width="160" height="40" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="200" y="415" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="600">Code Execution</text>
+
+  <rect x="120" y="440" width="160" height="30" rx="8" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="200" y="460" text-anchor="middle" fill="#0369a1" font-size="11">Scripts · Shell · Python</text>
+
+  <!-- Arrow up to agent -->
+  <line x1="200" y1="340" x2="400" y2="300" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- ===== Center: Built-in Skills ===== -->
+  <text x="500" y="325" text-anchor="middle" fill="#475569" font-size="12" font-weight="600">Built-in Skills</text>
+
+  <rect x="370" y="340" width="65" height="35" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="402" y="362" text-anchor="middle" fill="#92400e" font-size="10" font-weight="600">/pdf</text>
+
+  <rect x="445" y="340" width="65" height="35" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="477" y="362" text-anchor="middle" fill="#92400e" font-size="10" font-weight="600">/docx</text>
+
+  <rect x="520" y="340" width="65" height="35" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="552" y="362" text-anchor="middle" fill="#92400e" font-size="10" font-weight="600">/pptx</text>
+
+  <rect x="595" y="340" width="65" height="35" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="627" y="362" text-anchor="middle" fill="#92400e" font-size="10" font-weight="600">/xlsx</text>
+
+  <!-- Scheduled Tasks -->
+  <rect x="370" y="390" width="290" height="40" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="515" y="415" text-anchor="middle" fill="#c2410c" font-size="12" font-weight="600">/schedule — Automated Recurring Tasks</text>
+
+  <!-- Folder Management -->
+  <rect x="370" y="440" width="290" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="515" y="460" text-anchor="middle" fill="#475569" font-size="11">Folder-based Workspace Management</text>
+
+  <!-- ===== Right: Plugins ===== -->
+  <text x="800" y="325" text-anchor="middle" fill="#475569" font-size="12" font-weight="600">Plugins</text>
+
+  <rect x="720" y="340" width="160" height="35" rx="8" fill="#e0e7ff" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="800" y="362" text-anchor="middle" fill="#4338ca" font-size="11" font-weight="600">Sales · Marketing</text>
+
+  <rect x="720" y="383" width="160" height="35" rx="8" fill="#ede9fe" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="800" y="405" text-anchor="middle" fill="#5b21b6" font-size="11" font-weight="600">Finance · Legal</text>
+
+  <rect x="720" y="426" width="160" height="35" rx="8" fill="#f3e8ff" stroke="#c084fc" stroke-width="1.5"/>
+  <text x="800" y="448" text-anchor="middle" fill="#7e22ce" font-size="11" font-weight="600">HR · Design · Ops</text>
+
+  <!-- Arrow up to agent -->
+  <line x1="800" y1="340" x2="600" y2="300" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- ===== Bottom: MCP Connectors ===== -->
+  <line x1="500" y1="485" x2="500" y2="515" stroke="#64748b" stroke-width="1.5" marker-end="url(#ca)"/>
+
+  <rect x="100" y="515" width="800" height="100" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="500" y="540" text-anchor="middle" fill="#b45309" font-size="14" font-weight="700">MCP Connectors (Model Context Protocol)</text>
+
+  <!-- Connector boxes -->
+  <rect x="120" y="552" width="90" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="165" y="572" text-anchor="middle" fill="#78350f" font-size="10" font-weight="600">Gmail</text>
+
+  <rect x="220" y="552" width="90" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="265" y="572" text-anchor="middle" fill="#78350f" font-size="10" font-weight="600">Drive</text>
+
+  <rect x="320" y="552" width="90" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="365" y="572" text-anchor="middle" fill="#78350f" font-size="10" font-weight="600">Calendar</text>
+
+  <rect x="420" y="552" width="90" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="465" y="572" text-anchor="middle" fill="#78350f" font-size="10" font-weight="600">Slack</text>
+
+  <rect x="520" y="552" width="90" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="565" y="572" text-anchor="middle" fill="#78350f" font-size="10" font-weight="600">DocuSign</text>
+
+  <rect x="620" y="552" width="90" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="665" y="572" text-anchor="middle" fill="#78350f" font-size="10" font-weight="600">FactSet</text>
+
+  <rect x="720" y="552" width="90" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="765" y="572" text-anchor="middle" fill="#78350f" font-size="10" font-weight="600">GitHub</text>
+
+  <text x="500" y="605" text-anchor="middle" fill="#94a3b8" font-size="10">+ Apollo · Clay · Outreach · Similarweb · LegalZoom · MSCI · Harvey · WordPress ...</text>
+
+  <!-- ===== Bottom: Output ===== -->
+  <rect x="150" y="635" width="700" height="35" rx="8" fill="#f0fdf4" stroke="#86efac" stroke-width="1.5"/>
+  <text x="500" y="658" text-anchor="middle" fill="#15803d" font-size="13" font-weight="600">Output: Reports · Documents · Spreadsheets · Presentations · Organized Files · Automated Workflows</text>
+</svg>

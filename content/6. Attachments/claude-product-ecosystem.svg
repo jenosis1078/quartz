@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="600" rx="16" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" fill="#1e293b" font-size="24" font-weight="700">Claude Product Ecosystem</text>
+
+  <!-- Center: Claude AI Core -->
+  <circle cx="500" cy="280" r="80" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="500" y="270" text-anchor="middle" fill="#5b21b6" font-size="20" font-weight="700">Claude</text>
+  <text x="500" y="295" text-anchor="middle" fill="#7c3aed" font-size="13">AI Models</text>
+  <text x="500" y="312" text-anchor="middle" fill="#a78bfa" font-size="11">Opus · Sonnet · Haiku</text>
+
+  <!-- Top: claude.ai Web -->
+  <rect x="420" y="70" width="160" height="60" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="500" y="97" text-anchor="middle" fill="#1d4ed8" font-size="15" font-weight="600">claude.ai</text>
+  <text x="500" y="116" text-anchor="middle" fill="#64748b" font-size="11">Web Chat</text>
+  <line x1="500" y1="130" x2="500" y2="200" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Left: Claude Code -->
+  <rect x="100" y="200" width="180" height="80" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="190" y="232" text-anchor="middle" fill="#15803d" font-size="15" font-weight="700">Claude Code</text>
+  <text x="190" y="252" text-anchor="middle" fill="#64748b" font-size="11">Terminal CLI / IDE</text>
+  <text x="190" y="268" text-anchor="middle" fill="#94a3b8" font-size="10">Agentic Coding</text>
+  <line x1="280" y1="240" x2="420" y2="265" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Left bottom: Claude Skills -->
+  <rect x="100" y="330" width="180" height="60" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+  <text x="190" y="357" text-anchor="middle" fill="#059669" font-size="14" font-weight="600">Skills</text>
+  <text x="190" y="376" text-anchor="middle" fill="#64748b" font-size="10">Prompt-based Extensions</text>
+  <line x1="230" y1="330" x2="230" y2="280" stroke="#10b981" stroke-width="1" stroke-dasharray="4"/>
+  <text x="230" y="310" text-anchor="middle" fill="#10b981" font-size="9">extends</text>
+
+  <!-- Right: Claude Cowork -->
+  <rect x="720" y="200" width="180" height="80" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="810" y="232" text-anchor="middle" fill="#b45309" font-size="15" font-weight="700">Cowork</text>
+  <text x="810" y="252" text-anchor="middle" fill="#64748b" font-size="11">Desktop Agent</text>
+  <text x="810" y="268" text-anchor="middle" fill="#94a3b8" font-size="10">Knowledge Work</text>
+  <line x1="720" y1="240" x2="580" y2="265" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Right bottom: Plugins -->
+  <rect x="720" y="330" width="180" height="60" rx="12" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <text x="810" y="357" text-anchor="middle" fill="#a16207" font-size="14" font-weight="600">Plugins</text>
+  <text x="810" y="376" text-anchor="middle" fill="#64748b" font-size="10">Skills + Commands + MCP</text>
+  <line x1="770" y1="330" x2="770" y2="280" stroke="#eab308" stroke-width="1" stroke-dasharray="4"/>
+  <text x="770" y="310" text-anchor="middle" fill="#ca8a04" font-size="9">extends</text>
+
+  <!-- Bottom: Claude Desktop -->
+  <rect x="345" y="400" width="160" height="60" rx="12" fill="#faf5ff" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="425" y="427" text-anchor="middle" fill="#7e22ce" font-size="15" font-weight="600">Desktop App</text>
+  <text x="425" y="446" text-anchor="middle" fill="#64748b" font-size="11">macOS / Windows</text>
+  <line x1="470" y1="400" x2="490" y2="360" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Bottom center: API -->
+  <rect x="555" y="400" width="140" height="60" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <text x="625" y="427" text-anchor="middle" fill="#334155" font-size="15" font-weight="600">API</text>
+  <text x="625" y="446" text-anchor="middle" fill="#64748b" font-size="11">platform.claude.com</text>
+  <line x1="580" y1="400" x2="520" y2="360" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Bottom: MCP Layer -->
+  <rect x="200" y="500" width="600" height="50" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="500" y="522" text-anchor="middle" fill="#475569" font-size="13" font-weight="600">MCP (Model Context Protocol)</text>
+  <text x="500" y="540" text-anchor="middle" fill="#94a3b8" font-size="11">Google Drive · Gmail · Slack · Jira · GitHub · Figma · Custom Tools</text>
+  <!-- MCP connections -->
+  <line x1="190" y1="390" x2="350" y2="500" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="810" y1="390" x2="650" y2="500" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="625" y1="460" x2="580" y2="500" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- Legend icons -->
+  <circle cx="120" y="562" r="6" fill="#22c55e"/>
+  <text x="135" y="566" fill="#64748b" font-size="10">개발자</text>
+  <circle cx="220" cy="562" r="6" fill="#f59e0b"/>
+  <text x="235" y="566" fill="#64748b" font-size="10">지식 근로자</text>
+  <circle cx="340" cy="562" r="6" fill="#3b82f6"/>
+  <text x="355" y="566" fill="#64748b" font-size="10">일반 사용자</text>
+  <circle cx="460" cy="562" r="6" fill="#64748b"/>
+  <text x="475" y="566" fill="#64748b" font-size="10">개발자 (API)</text>
+</svg>
